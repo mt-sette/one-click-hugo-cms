@@ -2,6 +2,11 @@ backend:
     name: github
     repo: mt-sette/one-click-hugo-cms
     branch: main
+    auth_provider:
+        name: github
+        credentials:
+            client_id: ${GITHUB_CLIENT_ID}
+            client_secret: ${GITHUB_CLIENT_SECRET}
 
 media_folder: 'site/static/img' # Folder where user uploaded files should go
 public_folder: 'img'
